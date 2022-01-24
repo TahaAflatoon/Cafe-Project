@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="refresh" content="">
+        <base href="" target="">
+        <link rel="pingback" href="https: //domainname.com/xmlrpc.php"/>
+        <title> The Cafe </title>
+
+        <!-- Style Resources -->
+        <style>
+        
+        </style>
+        <link rel="stylesheet" href="./Bootstrap/bootstrap-4.6.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./JQuery/JQuery-UI/jquery-ui-1.11.4.legacy/jquery-ui.min.css">
+        <link rel="stylesheet" href="./material-icons-0.5.1/iconfont/material-icons.css">
+        <link rel="stylesheet" href="./Font-Awesome/fontawesome-pro-5.5.0/fontawesome-pro-5.5.0-web/css/all.min.css">
+        <link rel="stylesheet" href="./cafe.css">
+        <link rel="stylesheet" href="./cafe-responsive.css">
+
+        <!-- Meta Properties -->
+        <meta name="description" content=""/>
+        <meta name="keywords" content="">
+        <meta name="author" content="Taha Aflatoon Bakhshayesh">
+
+        <!-- Site Fevicon Icon -->
+        <link rel="icon" href="./Pictures/cafe-16.png" sizes="16x16"/>
+        <meta name="Cafe-TileImage" content="./Pictures/cafe-16.png"/>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <ul class="header-nav">
+                <li><a href="#home"> <i class="fas fa-home"></i> HOME </a></li>
+                <li><a href="#about"> <i class="fas fa-info"></i> ABOUT </a></li>
+                <li><a href="#menu"> <i class="fas fa-list"></i> MENU </a></li>
+                <li><a href="#where"> <i class="fas fa-map-marker"></i> WHERE </a></li>
+            </ul>
+        </header>
+
+        <!-- Content -->
+        <!-- Home -->
+        <section class="cafe-title" id="home">
+            <h1 class="title display-1"> The <br> Cafe </h1>
+            <div class="container">
+                <ul class="cafe-info">
+                    <li><p> Open from 6am to 5pm </p></li>
+                    <li class="test"><address> 15 Adr street, 5015 </address></li>
+                </ul>
+            </div>
+        </section>
+
+        <main class="contents">
+            <!-- About -->
+            <section class="about" id="about">
+                <h2> ABOUT THE CAFE </h2>
+                <p class="about-p1">
+                    The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="about-p2">
+                    In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+                </p>
+                <p class="about-p3">
+                    "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet. <br><br>
+                    Chef, Coffeeist and Owner: Liam Brown
+                </p>
+                <img src="./Pictures/coffeeshop.jpg" alt="coffeshop image" class="about-img">
+                <p class="about-p4 pt-2">
+                    <span> Opening hours: </span> everyday from 6am to 5pm. <br>
+                    <span> Address: </span> 15 Adr street, 5015, NY
+                </p>
+            </section>
+
+            <!-- Menu -->
+            <section class="menu" id="menu">
+                <h2> THE MENU </h2>
+                <!-- Tab links -->
+                <nav class="tab">
+                    <button class="tablinks" onclick="openMenu(event, 'Eat')" id="defaultOpen"> Eat </button>
+                    <button class="tablinks" onclick="openMenu(event, 'Drink')"> Drink </button>
+                </nav>
+                <!-- Tab content -->
+                <section id="Eat" class="tabcontent">
+                    <h5> Bread Basket </h5>
+                    <p> Assortment of fresh baked fruit breads and muffins 5.50 </p>
+                    <h5> Honey Almond Granola with Fruits </h5>
+                    <p> Natural cereal of honey toasted oats, raisins, almonds and dates 7.00 </p>
+                    <h5> Belgian Waffle </h5>
+                    <p> Vanilla flavored batter with malted flour 7.50 </p>
+                    <h5> Scrambled eggs </h5>
+                    <p> Scrambled eggs, roasted red pepper and garlic, with green onions 7.50 </p>
+                    <h5> Blueberry Pancakes </h5>
+                    <p> With syrup, butter and lots of berries 8.50 </p>
+                </section>
+                <section id="Drink" class="tabcontent">
+                    <h5> Coffee </h5>
+                    <p> Regular coffee 2.50 </p>
+                    <h5> Chocolato </h5>
+                    <p> Chocolate espresso with milk 4.50 </p>
+                    <h5> Corretto </h5>
+                    <p> Whiskey and coffee 5.00 </p>
+                    <h5> Iced tea </h5>
+                    <p> Hot tea, except not hot 3.00 </p>
+                    <h5> Soda </h5>
+                    <p> Coke, Sprite, Fanta, etc. 2.50 </p>
+                </section>
+                <img src="./Pictures/coffeehouse2.jpg" alt="coffehouse2 image">
+            </section>
+
+            <!-- Where -->
+            <section class="where" id="where">
+                <h2> WHERE TO FIND US </h2>
+                <p> Find us at some address at some place. </p>
+                <img src="./Pictures/map.jpg" alt="cafe map image">
+                <p>
+                    <span class="fyi"> FYI! </span> &nbsp; We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                </p>
+            </section>
+
+            <!-- Form -->
+            <section class="form">
+                <p style="font-size: 15pt;">
+                    <span style="font-weight: bold;"> Reserve </span>
+                    a table, ask for today's special or just send us a message:
+                </p>
+                <form method="post" action="./example.php" autocomplete="on">
+                    <input type="text" id="Name" name="Name" placeholder="Full Name" required>
+                    <input type="number" name="People" placeholder="How many people" required>
+                    <input type="datetime-local" name="Date" placeholder="Date & Time" value="2022-01-24T16:00" required>
+                    <input type="text" name="Message" placeholder="Message" class="Message" required>
+                    <button type="submit"> SEND MESSAGE </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p> Powered by: <br><br> <span> Taha Aflatoon Bakhshayesh </span> </p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script>
+        
+        </script>
+        <script src="./JQuery/jquery-3.6.0.min.js"></script>
+        <script src="./JQuery/JQuery-UI/jquery-ui-1.11.4.legacy/jquery-ui.min.js"></script>
+        <script src="./Popper/popper.min.js"></script>
+        <script src="./Bootstrap/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+        <script src="./cafe.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+/* (Responsive) */
+/* Mobile (small) */
+@media screen and (min-width:320px) and (max-width:374px) {
+    /* header parts */
+    .header-nav i {
+        width: 2.5rem;
+    }
+    .cafe-title {
+        height: 505px;
+    }
+    .title {
+        padding-top: 0.75em;
+    }
+    .cafe-info {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .cafe-info li {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    /* content */
+    .contents {
+        width: 90%;
+    }
+}
+
+/* Mobile (medium) */
+@media screen and (min-width:375px) and (max-width:424px) {
+    .header-nav i {
+        width: 5rem;
+    }
+    .cafe-title {
+        height: 505px;
+    }
+    .title {
+        padding-top: 0.75em;
+    }
+    .cafe-info {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .cafe-info li {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .contents {
+        width: 90%;
+    }
+}
+
+/* Mobile (large) */
+@media screen and (min-width:425px) and (max-width:575px) {
+    .header-nav i {
+        width: 1.5rem;
+    }
+    .cafe-title {
+        height: 530px;
+    }
+    .title {
+        padding-top: 1em;
+    }
+    .cafe-info {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .cafe-info li {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .contents {
+        width: 90%;
+    }
+}
+
+/* Size (small) */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .cafe-title {
+        height: 530px;
+    }
+    .title {
+        padding-top: 1em;
+    }
+    .cafe-info {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .cafe-info li {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .contents {
+        width: 80%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .cafe-title {
+        height: 530px;
+    }
+    .title {
+        padding-top: 1em;
+    }
+    .contents {
+        width: 70%;
+    }
+}
+
+/* Laptop (medium) */
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+}
+
+/* Laptop (large) */
+@media screen and (min-width:1200px) and (max-width:1439px) {
+
+}
+
+/* Size (extra-large) */
+@media screen and (min-width:1440px) and (max-width:2559px) {
+
+}
